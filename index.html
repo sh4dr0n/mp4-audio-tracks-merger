@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Video Audio Merger</title>
+<link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&display=swap" rel="stylesheet">
+<style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        background: #0f0f0f;
+        color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .container {
+        position: relative;
+        width: 90%;
+        max-width: 500px;
+        padding: 50px 40px;
+        border-radius: 20px;
+        backdrop-filter: blur(12px) saturate(180%);
+        background: rgba(20,20,20,0.6);
+        border: 2px solid;
+        border-image: linear-gradient(45deg, #ff7edb, #7ef0ff, #a2baff, #ff7edb) 1;
+        animation: borderGlow 8s linear infinite;
+        text-align: center;
+        box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+    }
+
+    @keyframes borderGlow {
+        0% {border-image: linear-gradient(45deg, #ff7edb, #7ef0ff, #a2baff, #ff7edb) 1;}
+        25% {border-image: linear-gradient(90deg, #7ef0ff, #ff7edb, #a2baff, #7ef0ff) 1;}
+        50% {border-image: linear-gradient(135deg, #a2baff, #7ef0ff, #ff7edb, #a2baff) 1;}
+        75% {border-image: linear-gradient(180deg, #ff7edb, #a2baff, #7ef0ff, #ff7edb) 1;}
+        100% {border-image: linear-gradient(45deg, #ff7edb, #7ef0ff, #a2baff, #ff7edb) 1;}
+    }
+
+    h1 {
+        font-size: 2rem;
+        color: #ffffff;
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-size: 1rem;
+        color: #dddddd;
+        margin-bottom: 40px;
+        line-height: 1.5;
+    }
+
+    .download-btn {
+        display: inline-block;
+        padding: 15px 35px;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #ffffff;
+        background: rgba(255,255,255,0.05);
+        border-radius: 50px;
+        text-decoration: none;
+        border: 2px solid #ffffff20;
+        backdrop-filter: blur(6px);
+        transition: all 0.3s ease;
+    }
+
+    .download-btn:hover {
+        background: rgba(255,255,255,0.1);
+        box-shadow: 0 0 15px #ff7edb55, 0 0 25px #7ef0ff55;
+    }
+
+    .footer {
+        margin-top: 30px;
+        font-size: 0.85rem;
+        color: #888;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Video Audio Merger</h1>
+    <p>Merge all audio tracks from your MP4 videos into a single file effortlessly.<br>
+       Download the app and start merging your videos in seconds!</p>
+    <a href="video_merger.exe" class="download-btn" download>Download App</a>
+
+    <div class="footer">
+        &copy; 2026 Video Audio Merger. Made with AI for personal needs.
+    </div>
+</div>
+
+</body>
+</html>
